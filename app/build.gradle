@@ -13,6 +13,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            project.ext.set("archivesBaseName", "GearboxGirlsOutreach-" + defaultConfig.versionName);
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
