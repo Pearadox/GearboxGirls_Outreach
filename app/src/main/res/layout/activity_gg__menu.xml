@@ -2,19 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5EBE0"
+    android:backgroundTint="#88cda9"
     tools:context=".gg_Menu">
 
     <TextView
         android:id="@+id/lbl_Header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="24dp"
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28dp"
         android:textStyle="bold"
-        android:gravity="center"
-        android:text="Menu" />
+        tools:text="MENU" />
 
     <Button
         android:id="@+id/btn_Tutorials"
@@ -22,47 +27,90 @@
         android:layout_height="100dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="150dp"
-        android:textSize="20dp"
-        android:background="@color/green"
-        android:text="Tutorials" />
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Tutorials"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_Quizzes"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="350dp"
         android:layout_marginTop="150dp"
-        android:textSize="20dp"
-        android:background="@color/yellow"
-        android:text="Quizzes" />
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Quizzes"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_Magazine"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"
-        android:textSize="20dp"
-        android:background="@color/yellow"
-        android:text="Magazine" />
+        android:layout_marginTop="450dp"
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Magazine"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_Games"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="350dp"
         android:layout_marginTop="300dp"
-        android:textSize="20dp"
-        android:background="@color/green"
-        android:text="Games" />
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Games"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spinner_Issue"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="550dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_jobExplorer"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Job Explorer"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="350dp"
         android:layout_marginTop="450dp"
-        />
+        android:background="#0f6b3c"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="DuplicateIds" />
 
 
 </RelativeLayout>

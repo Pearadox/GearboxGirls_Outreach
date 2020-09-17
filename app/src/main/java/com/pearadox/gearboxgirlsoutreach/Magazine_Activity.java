@@ -76,21 +76,17 @@ public class Magazine_Activity extends AppCompatActivity {
         btn_Back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d(TAG, "@@@  btn_Back  @@@  " + pg);
-                 if (pg > 0) {
-                     pg--;
-                 } else {
-                     btn_Back.setEnabled(false);
-                     btn_Forward.setEnabled(true);
-                 }
+                     if (pg > 0) {
+                         pg--;
+                     } else {
+                         btn_Back.setEnabled(false);
+                     }
                 switch (num) {
                     case "STEM Savvy V.1":
                         pg_2Display = String.valueOf(magIssue1[pg]);
                         break;
                     case "STEM Savvy V.2":
                         pg_2Display = String.valueOf(magIssue2[pg]);
-                        break;
-                    default:
-                        pg_2Display = String.valueOf(magIssue1[pg]);    // Default to Issue #1
                         break;
                 }
                 magPage.setImageResource(getResources().getIdentifier(pg_2Display, "drawable", getPackageName()));
@@ -116,14 +112,6 @@ public class Magazine_Activity extends AppCompatActivity {
                             btn_Forward.setEnabled(false);
                         }
                         pg_2Display = String.valueOf(magIssue2[pg]);
-                        break;
-                    default:
-                        if (pg < magIssue1.length - 1) {
-                            pg++;
-                        } else {
-                            btn_Forward.setEnabled(false);
-                        }
-                        pg_2Display = String.valueOf(magIssue1[pg]);    // Default to Issue #1
                         break;
                 }
                 magPage.setImageResource(getResources().getIdentifier(pg_2Display, "drawable", getPackageName()));
